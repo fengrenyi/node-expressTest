@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/bidding.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+	<div class="banner">
+		<div class="w banner-con">
+			<a href="http://www.pincai360.com/user/register.html" class="link-join"></a>
+			<div class="box-register">
+
+				<form id="form">
+					<div class="iptBox">
+						<div class="iptMain">
+							<input type="text" placeholder="手机号" class="newRegIpt regPhone" name="regPhone">
+							<div class="regError"></div>
+						</div>
+						<div class="iptMain">
+							<div class="clearfix">
+								<input type="text" placeholder="验证码" class="newRegIpt ipt195" name="ipt195">
+								<img src="/images/bidding/validateCodeServlet.jpg" width="118" height="40" class="codeImg codeRefresh">
+							</div>
+						</div>
+						<div class="iptMain">
+							<div class="clearfix">
+								<input type="text" placeholder="短信验证码" class="newRegIpt ipt225" name="ipt225">
+								<a href="javascript:;" class="regGetCode btn1">获取短信验证码</a>
+							</div>
+						</div>
+						<div class="newRegTxt1">
+							<input type="checkbox" checked="" name="choose" id="choose">&nbsp;已阅读并同意品材汇<a href="http://www.pincai360.com/policies/detail.html?id=10273" target="_blank">《用户使用协议》</a>
+							<!-- <div class="regError" generated="true" for="choose">
+								<div class="wrong">请阅读并同意品材汇《用户注册协议》</div>
+							</div> -->
+						</div>
+						<input type="submit" class="regSub2 but" id="submitBtn" value="立即注册">
+					</div>
+				</form>
+
+
+
+			</div>
+		</div>
+	</div>
+
+	<div class="wrapper w">
+		<!-- 数据统计模块 -->
+		<div class="box-statistical">
+			<ul>
+				<li>
+					<span>
+						<p>已成功入驻的企业</p>
+					</span>
+
+					<div class="figure-roll">
+						<!--<div class="roll-item">
+							<div class="figure" data-num="8">0123456789</div>
+							<div class="line"></div>
+							<div class="line-shadow"></div>
+						</div> -->
+						<div class="unit">万</div>
+					</div>
+
+					
+				</li>
+				<li>
+					<span>
+						<p>订单累计采购额</p>
+					</span>
+
+					<div class="figure-roll">
+						<div class="unit">亿</div>
+					</div>
+
+					
+				</li>
+				<li>
+					<span>
+						<p>今日新增采购订单</p>
+					</span>
+
+					<div class="figure-roll">
+						<div class="unit">笔</div>
+					</div>
+
+					
+				</li>
+			</ul>
+		</div>
+
+		<!-- 品材汇入驻会员-->
+		<div class="module box-enterPincaihuei clearfix">
+			<div class="title-module">
+				<div class="title-txt">
+				<p>品材汇免费招商诚邀您入驻，入驻会员专享</p>
+				</div>
+			</div>
+
+			<div class="business-module">
+				<div class="bus-item ie-css3">
+					<i class="icon icon-hlmj"></i>
+					<span>海量买家</span>
+				</div>
+				<p>··············</p>
+				<div class="bus-item ie-css3">
+					<i class="icon icon-qyjz"></i>
+					<span>企业建站</span>
+				</div>
+				<p>··············</p>
+				<div class="bus-item ie-css3">
+					<i class="icon icon-yqtg"></i>
+					<span>引擎推广</span>
+				</div>
+				<p>··············</p>
+				<div class="bus-item ie-css3">
+					<i class="icon icon-cgdd"></i>
+					<span>采购订单</span>
+				</div>
+				<p>··············</p>
+				<div class="bus-item ie-css3">
+					<i class="icon icon-cyd"></i>
+					<span>材易贷专享</span>
+				</div>
+			</div>
+			
+			<!-- 采购信息列表 -->
+			<div class="list-purchase fl">
+				<div class="title-pur">
+					采购信息
+				</div>
+				<div class="list-pur-con">
+					<ul>
+						<li>
+							<p>上海贝突装饰材料有限公司</p>
+							<p>采购外保温材料7000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>吉林市合隆棚架制造有限公司</p>
+							<p>采购防水涂料100桶</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>嵊州市德安诺防水建材有限公司</p>
+							<p>采购水性环氧树脂10吨</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>深圳市鸿雁飞科技有限公司</p>
+							<p>采购地面瓷砖500片</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>锦州兴宏新型建筑材料有限公司</p>
+							<p>采购文化石5000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>内蒙古佳益装饰工程有限责任公司</p>
+							<p>采购花岗岩1000块</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>云浮市完美精艺石材有限公司</p>
+							<p>采购石材8000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>阜阳市阜康医疗设备有限公司</p>
+							<p>采购板材10000件</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>广州惠艺旗帜有限公司</p>
+							<p>采购板材5000张</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+
+						<li>
+							<p>山东润德工贸有限公司</p>
+							<p>采购阳光板80000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>安徽振云装饰工程有限公司</p>
+							<p>采购门窗五金1000件</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>武汉豪顺石材有限公司</p>
+							<p>采购花岗岩5000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>平南县上渡镇双林家具经营部</p>
+							<p>采购隔断5000件</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>惠州市惠城区诠欣包装材料经营部</p>
+							<p>采购PVC板1000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>扬州润光照明电器有限公司</p>
+							<p>采购瓷砖10000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>厦门鑫广宏贸易有限公司</p>
+							<p>采购瓷砖1000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>昆明活石咖啡有限公司</p>
+							<p>采购瓷砖2000片</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>浩文建材有限公司</p>
+							<p>采购PVC管1000根</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>九江赛璐珞实业有限公司</p>
+							<p>采购隔热板100平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>天津市同顺发暖通工程有限公司</p>
+							<p>采购铝扣板120平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>贵州奇伟实业发展有限公司</p>
+							<p>采购地板砖3000块</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>北京冀成科技有限公司</p>
+							<p>采购矿棉板15000立方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>深圳市欧远铝业有限公司</p>
+							<p>采购隔断100平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>北京中德新亚建筑技术有限公司</p>
+							<p>采购防水材料3吨</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>东莞市昶耀实业有限公司</p>
+							<p>采购地板漆700平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>彦莎进出口有限公司</p>
+							<p>采购复合地板1000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>苏州林轩建材有限公司</p>
+							<p>采购隔音板5000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>深圳市创久远科技有限公司</p>
+							<p>采购LED灯600个</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>深圳晋善美科技有限公司</p>
+							<p>采购LED灯10000个</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>香港土木匠装饰设计有限公司</p>
+							<p>采购实木门2772套</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>郑州珈铖装饰材料有限公司</p>
+							<p>河南铝天花采购20000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>深圳百年金海诚达科技有限公司</p>
+							<p>采购PVC地板1000平方米</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>深圳市奇信建设集团有限公司</p>
+							<p>东莞市辖区项目，采购多乐士内墙漆1000桶！价优者谈</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>深圳市奇信建设集团有限公司</p>
+							<p>采购开关50个，吊灯20个，急需！</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>浙江铭爵贸易有限公司</p>
+							<p>采购大量印花窗帘1000件</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+						<li>
+							<p>邵武市鑫杰贸易有限公司</p>
+							<p>外墙瓷砖采购1000件</p>
+							<a href="http://www.pincai360.com/user/register.html">点击洽谈报价</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="box-askToBuy fr">
+				<ul>
+					<li>
+						<i class="icon icon-gwc"></i>
+						<span>装饰企业制定采购</span>
+					</li>
+					<li>
+						<i class="icon icon-kf"></i>
+						<span>实时人工撮合交易</span>
+					</li>
+					<li>
+						<i class="icon icon-sl"></i>
+						<span>每月沙龙建材电商</span>
+					</li>
+				</ul>
+				<h2>累计卖家求购信息<span>1,312,116</span>个</h2>
+				<a href="http://www.pincai360.com/user/register.html" class="link-join but">立即洽谈</a>
+			</div>
+
+		</div>
+
+		<!-- 平台 -->
+		<div class="module box-platform clearfix">
+			<div class="title-module">
+				<div class="title-txt">
+				<p>行业门户、APP平台、企业PC官网、企业手机官网、企业微网站、微信公众号</p>
+				</div>
+			</div>
+			<div class="pla-l fl">
+				<h2>六网合一<span>即刻拥有</span></h2>
+				<a href="http://www.pincai360.com/user/register.html" class="link-join but">免费申请</a>
+			</div>
+			<div class="pla-r fr ie-css3">
+				<a href="javascript:;" class="ie-css3 circle-1"><i class="icon"></i></a>
+				<a href="javascript:;" class="ie-css3 circle-2"><p>微信<br/>公众号</p></a>
+				<a href="javascript:;" class="ie-css3 circle-3"><p>行业门户</p></a>
+				<a href="javascript:;" class="ie-css3 circle-4"><p>APP平台</p></a>
+				<a href="javascript:;" class="ie-css3 circle-5"><p>企业<br/>PC官网</p></a>
+				<a href="javascript:;" class="ie-css3 circle-6"><p>企业<br/>手机官网</p></a>
+				<a href="javascript:;" class="ie-css3 circle-7"><p>企业<br/>微官网</p></a>
+			</div>
+		</div>
+
+
+
+		<!-- 百度推广展示 -->
+		<div class="module box-baidu clearfix">
+			<div class="title-module">
+				<div class="title-txt">
+				<p>每年百度推广（PC+移动）<span>2.3亿元</span>全引擎为您投放</p>
+				</div>
+			</div>
+
+		    <div id="carousel">
+		      <a href="javascript:;"><img src="/images/bidding/1.png" id="item-1" /></a>
+		      <a href="javascript:;"><img src="/images/bidding/2.png" id="item-2" /></a>
+		      <a href="javascript:;"><img src="/images/bidding/3.png" id="item-3" /></a>
+		      <a href="javascript:;"><img src="/images/bidding/4.png" id="item-4" /></a>
+		      <a href="javascript:;"><img src="/images/bidding/5.png" id="item-5" /></a>
+		    </div>
+		    <a href="http://www.pincai360.com/user/register.html" class="link-join but">免费申请</a>
+		</div>
+
+		<!-- 成功案例 -->
+		<div class="module box-example clearfix">
+			<div class="title-module">
+				<div class="title-txt">
+				<p>成功案例</p>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<a href="javascript:;">
+						<div class="logo-exa">
+							<img src="/images/bidding/enterprise1.jpg">
+						</div>
+						<div class="txt-exa">
+							奇信建设集团累计采购金额已达1.6亿元。
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="logo-exa">
+							<img src="/images/bidding/enterprise2.jpg">
+						</div>
+						<div class="txt-exa">
+							富兰克浴室柜已正式签约加盟品材汇平台！
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="logo-exa">
+							<img src="/images/bidding/enterprise3.jpg">
+						</div>
+						<div class="txt-exa">
+							品材汇于2015年12月2日正式与国家质检中心签订合作协议，成为战略合作伙伴。
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="logo-exa">
+							<img src="/images/bidding/enterprise4.jpg">
+						</div>
+						<div class="txt-exa">
+							宏宇陶瓷入驻平台8个月，累计销售118万元。
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<div class="logo-exa">
+							<img src="/images/bidding/enterprise5.jpg">
+						</div>
+						<div class="txt-exa">
+							2016年4月28日品材汇通会员突破50万大关！
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 免费入驻、采购 -->
+		<div class="module box-enterPurchase clearfix">
+			<div class="title-module">
+				<div class="title-txt">
+				<p>装饰企业免费入驻/采购产品</p>
+				</div>
+			</div>
+
+			<div class="enterPur-l fl">
+				<i class="icon"></i>
+				<span class="fr">
+					名企采购6大专享<br/>让您的采购简单起来
+				</span>
+			</div>
+			<ul>
+				<li><span>1</span><p>专属采购旗舰店</p></li>
+				<li><span>2</span><p>专属专业采购助理</p></li>
+				<li><span>3</span><p>专享低成本采购</p></li>
+				<li><span>4</span><p>专享品质保证</p></li>
+				<li><span>5</span><p>免费拿样特权</p></li>
+				<li><span>6</span><p>免费获得采购优化报告</p></li>
+			</ul>
+
+			<div class="fl">
+				<a href="http://www.pincai360.com/user/register.html" class="link-join but">免费入驻</a>
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<!-- 客服浮窗 -->
+	<div class="box-service">
+		<div class="title-ser">
+			<i class="icon fl"></i>
+			联系客服
+		</div>
+		<div class="con-ser">
+			电话咨询
+			<p>400-666 0360</p>
+		</div>
+	</div>
+
+	<!-- 返回顶部 -->
+	<div class="ie-css3 to-top">
+		<i class="icon"></i>
+	</div>
+
+
+	<!-- 底部 -->
+	<div class="footer">
+		<div class="w footer-con">
+			<a href="http://www.pincai360.com/user/register.html" class="link-join but">免费加入</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/javascripts/biddingData.js"></script>
+	<script type="text/javascript" src="/javascripts/scroll.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.waterwheelCarousel.min.js"></script>
+    <script type="text/javascript" src="/javascripts/jquery.toTop.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+
+			//添加数据
+			if (biddingData) {
+				var $figureRoll = $(".figure-roll"),$rollItemI = '',bidDataI = '',rollItemHtml = '';
+				for (var i = 0; i < $figureRoll.length; i++) {
+					if (typeof biddingData[i] == "number") {
+						bidDataI = biddingData[i].toString();
+					}else{
+						bidDataI = biddingData[i];
+					}
+					rollItemHtml = '';
+					for (var y = 0; y < bidDataI.length; y++) {
+						rollItemHtml += '<div class="roll-item ie-css3"><div class="figure" data-num="'+ bidDataI.substring(y,y+1) +'">0123456789</div><div class="line"></div><div class="line-shadow"></div></div>';
+					}
+					$figureRoll.eq(i).prepend(rollItemHtml);
+				}
+			}
+
+
+			//老虎机滚动效果
+			var $rollItem = $(".figure-roll .roll-item"),
+				$figure = '';
+			setTimeout(function(){
+				for (var i = 0; i < $rollItem.length; i++) {
+					$figure = $rollItem.eq(i).find(".figure");
+					$figure.animate({"top":"-"+$figure.attr("data-num")*45+"px"},900);
+				}
+			},100);
+
+			//ie兼容css3
+			if (window.PIE) {
+		        $('.ie-css3,.but').each(function() {
+		            PIE.attach(this);
+		        });
+		    }
+
+
+		    //文字滚动
+			$(".list-purchase .list-pur-con").myScroll({
+				speed:40, //数值越大，速度越慢
+				rowHeight:42 //li的高度
+			});
+
+			//图片轮播
+			var carousel = $("#carousel").waterwheelCarousel({
+	          flankingItems:2,
+	          separation:293
+	        });
+
+	        //图片轮播-自动轮播
+	        var carSetI = '';
+	        carSetI = setInterval(function(){
+	          carousel.next();
+	        },4000);
+
+	        $("body").on("mouseenter","#carousel img.carousel-center",function(){
+	          clearInterval(carSetI);
+	        });
+
+	        $("body").on("mouseleave","#carousel img.carousel-center",function(){
+	           carSetI = setInterval(function(){
+	            carousel.next();
+	          },4000)
+	        })
+
+	        //鼠标经过图片放大
+	        $("body").on("mouseenter",".box-example li",function(){
+	        	$(this).find("img").stop().animate({"width":"165px","height":"165px","margin-top":"20px"},300);
+	        })
+	        $("body").on("mouseleave",".box-example li",function(){
+	        	$(this).find("img").stop().animate({"width":"145px","height":"145px","margin-top":"30px"},300);
+	        	
+	        });
+
+	        //返回顶部
+	        $('.to-top').toTop({
+               autohide: true,
+               offset: 420,
+               speed: 400,
+               right: 20,
+               bottom: 30
+           });
+
+		})
+	</script>
+
+  </body>
+</html>
